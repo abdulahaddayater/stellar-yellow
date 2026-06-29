@@ -174,6 +174,8 @@ Set these in your **Vercel project settings** (or a local `.env` file — never 
 | Frontend | `frontend` | https://stellar-yellow-abd.vercel.app |
 | Backend | `backend` | https://stellar-yellow-abd-backend.vercel.app |
 
+**Important:** Set the **Root Directory** to `frontend` (or `backend`) in each Vercel project. The frontend uses **Vite 7**, which requires **Node.js 20.19+** — a `.nvmrc` file is included (`22`).
+
 If the frontend Root Directory is the repo root instead, the root `vercel.json` will build from `frontend/` automatically.
 
 ---
