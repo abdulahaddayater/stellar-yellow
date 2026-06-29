@@ -160,12 +160,21 @@ Set these in your **Vercel project settings** (or a local `.env` file — never 
 
 ### Backend (`stellar-yellow-abd-backend.vercel.app`)
 
+| Setting | Value |
+|---------|--------|
+| **Root Directory** | `backend` |
+| **Install Command** | `npm install` |
+| **Build Command** | *(leave empty — serverless Express)* |
+| **Output Directory** | *(leave empty)* |
+
 | Variable | Value |
 |----------|--------|
 | `CONTRACT_ID` | `CDOCHIFTGNVVDMMELB6VRIBYIA265SIQMIRM36BP3MPYMWQCRWUIWZZV` |
 | `FRONTEND_URL` | `https://stellar-yellow-abd.vercel.app` |
 
 `PORT` and `VERCEL` are set automatically by Vercel. CORS allows the frontend URL above plus localhost.
+
+**Do not** use `cd frontend && npm install` on the backend project — that command is for the frontend only.
 
 ### Vercel project setup
 
