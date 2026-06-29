@@ -150,6 +150,13 @@ Set these in your **Vercel project settings** (or a local `.env` file — never 
 
 ### Frontend (`stellar-yellow-abd.vercel.app`)
 
+| Setting | Value |
+|---------|--------|
+| **Root Directory** | `frontend` |
+| **Install Command** | `npm install` |
+| **Build Command** | `npm run build` |
+| **Output Directory** | `dist` |
+
 | Variable | Value |
 |----------|--------|
 | `VITE_CONTRACT_ID` | `CDOCHIFTGNVVDMMELB6VRIBYIA265SIQMIRM36BP3MPYMWQCRWUIWZZV` |
@@ -183,9 +190,7 @@ Set these in your **Vercel project settings** (or a local `.env` file — never 
 | Frontend | `frontend` | https://stellar-yellow-abd.vercel.app |
 | Backend | `backend` | https://stellar-yellow-abd-backend.vercel.app |
 
-**Important:** Set the **Root Directory** to `frontend` (or `backend`) in each Vercel project. The frontend uses **Vite 7**, which requires **Node.js 20.19+** — a `.nvmrc` file is included (`22`).
-
-If the frontend Root Directory is the repo root instead, the root `vercel.json` will build from `frontend/` automatically.
+**Important:** Each Vercel project uses its own **Root Directory** (`frontend` or `backend`) and runs **`npm install`** directly — no `cd frontend` needed. The frontend uses **Vite 7**, which requires **Node.js 20.19+** (`.nvmrc` set to `22`).
 
 ---
 
