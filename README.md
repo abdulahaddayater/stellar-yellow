@@ -171,8 +171,8 @@ Set these in your **Vercel project settings** (or a local `.env` file — never 
 |---------|--------|
 | **Root Directory** | `backend` |
 | **Install Command** | `npm install` |
-| **Build Command** | *(leave empty — serverless Express)* |
-| **Output Directory** | *(leave empty)* |
+| **Build Command** | *(empty — leave blank, no build step)* |
+| **Output Directory** | *(empty — leave blank)* |
 
 | Variable | Value |
 |----------|--------|
@@ -181,7 +181,7 @@ Set these in your **Vercel project settings** (or a local `.env` file — never 
 
 `PORT` and `VERCEL` are set automatically by Vercel. CORS allows the frontend URL above plus localhost.
 
-**Do not** use `cd frontend && npm install` on the backend project — that command is for the frontend only.
+**Do not** use any `cd frontend` commands on the backend project. Clear the Build Command override in Vercel if it still shows `cd frontend && npm run build`.
 
 ### Vercel project setup
 

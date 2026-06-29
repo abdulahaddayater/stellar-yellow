@@ -1,5 +1,7 @@
 {
   "installCommand": "npm install",
+  "buildCommand": "",
+  "outputDirectory": "",
   "rewrites": [
     {
       "source": "/(.*)",
