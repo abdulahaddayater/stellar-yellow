@@ -172,7 +172,7 @@ Set these in your **Vercel project settings** (or a local `.env` file — never 
 | **Root Directory** | `backend` |
 | **Install Command** | `npm install` |
 | **Build Command** | `npm run build` |
-| **Output Directory** | *(must be empty — do NOT use `frontend/dist`)* |
+| **Output Directory** | `frontend/dist` *(works with backend build script — or leave empty)* |
 
 | Variable | Value |
 |----------|--------|
