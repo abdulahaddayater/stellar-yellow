@@ -163,7 +163,7 @@ Set these in your **Vercel project settings** (or a local `.env` file — never 
 | `VITE_BACKEND_URL` | `https://stellar-yellow-abd-backend.vercel.app` |
 | `VITE_NETWORK` | `TESTNET` |
 
-**Local dev:** create `frontend/.env` with `VITE_BACKEND_URL=http://localhost:4000` (gitignored).
+**Local dev:** use `frontend/.env.local` with `VITE_BACKEND_URL=http://localhost:4000` (gitignored). Production builds always use `https://stellar-yellow-abd-backend.vercel.app`.
 
 ### Backend (`stellar-yellow-abd-backend.vercel.app`)
 
